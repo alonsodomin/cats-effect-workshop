@@ -6,9 +6,6 @@ libraryDependencies ++= Seq(
 
 initialCommands in console += Seq(
   "import cats._, cats.effect._, cats.implicits._",
-  "import scala.concurrent.duration._",
-  "import scala.concurrent.ExecutionContext",
-  "implicit val globalContextShift = IO.contextShift(ExecutionContext.global)",
-  "implicit val globalTimer = IO.timer(ExecutionContext.global)"
+  "import scala.concurrent.duration._"
 ).mkString("\n")
 
